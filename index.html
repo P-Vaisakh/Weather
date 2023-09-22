@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de28041e38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+       <div class="search-box">
+            <input type="text" placeholder="City name goes here..." id="city-name">
+            <button id="input-submit" "><img src="./img/search.png" alt=""></button>
+       </div> 
+       <div class="current-loc"><a href="#">Use current location <i class="fa-solid fa-location-dot" style="color: #ced9bf;"></i></a></div>  
+       <div class="weather-details">
+        <img src="" id="weather-img">
+        <h1 id="temperature"></h1>
+        <h1 id="city-name-output"></h1>
+        <div class="more-details">
+            <div class="details">
+                <img src="./img/wind.png" alt="">
+                <div class="inner-details">
+                    <h3 id="wind-speed"></h3>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+            <div class="details">
+                <img src="./img/humidity.png" alt="humidity">
+                <div class="inner-details">
+                    <h3 id="humidity"></h3>
+                    <p>Humidity</p>
+                </div>
+            </div>
+        </div>
+       </div>
+     </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

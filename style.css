@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ced9bf;
+}
+
+/* body{
+    background-color: #2c3439;
+} */
+
+.container {
+    width: 40%;
+    height: 90vh;
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+    /* background-color: #2c3439; */
+    /* background-image: linear-gradient(315deg, #aee1f9 0%, #f6ebe6 74%); */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    padding: 20px;
+    background: #2c3439;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.container .search-box input {
+    width: 60%;
+    height: 40px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #2c3439;
+}
+
+.container .search-box button {
+    width: 10%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+}
+
+.container .search-box button img {
+    width: 50%;
+}
+
+.weather-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.more-details {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 28px;
+    display: none;
+    /* gap: -100px; */
+}
+
+.more-details .details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.more-details .details img {
+    width: 30%;
+}
+
+#temperature {
+    font-size: 40px;
+}
+
+@media (max-width:768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container .search-box input {
+        width: 60%;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .container .search-box button {
+        width: 15%;
+    }
+
+    .container .search-box button img {
+        width: 17.5px;
+    }
+
+    .more-details .details img {
+        width: 30%;
+    }
+
+    .more-details .details {
+        font-size: 13px;
+    }
+
+    .more-details .details {
+        gap: 8px;
+    }
+
+    .current-loc {
+        font-size: 13px;
+    }
+}
+
+.current-loc {
+    text-align: center;
+    margin: 15px 0;
+}
